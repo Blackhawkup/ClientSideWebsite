@@ -1,0 +1,232 @@
+{
+  "Renaissance Opportunities Fund PMS": {
+    "Largecap": 78.0,
+    "Midcap": 14.000000000000002,
+    "Small Cap ": 7.000000000000001,
+    "Others/Cash": 1.0,
+    "Sharpe Ratio": 0.55,
+    "Beta": 0.95,
+    "P/E": 22.6,
+    "P/B": null
+  },
+  "Nippon India Large Cap Fund(G)": {
+    "Largecap": 83.7409,
+    "Midcap": 10.7269,
+    "Small Cap ": 3.8736,
+    "Others/Cash": 1.6586,
+    "Sharpe Ratio": 1.1,
+    "Beta": 0.92,
+    "P/E": 24.11,
+    "P/B": 3.69
+  },
+  "ICICI Pru Bluechip Fund(G)": {
+    "Largecap": 81.8837,
+    "Midcap": 8.556999999999999,
+    "Small Cap ": 0.184,
+    "Others/Cash": 9.375300000000001,
+    "Sharpe Ratio": 1.01,
+    "Beta": 0.91,
+    "P/E": 23.22,
+    "P/B": 3.45
+  },
+  "Kotak Bluechip Fund(G)": {
+    "Largecap": 82.1469,
+    "Midcap": 8.6009,
+    "Small Cap ": 4.5192000000000005,
+    "Others/Cash": 4.7329,
+    "Sharpe Ratio": 0.76,
+    "Beta": 0.95,
+    "P/E": 23.41,
+    "P/B": 3.59
+  },
+  "Canara Rob Bluechip Equity Fund-Reg(G)": {
+    "Largecap": 90.4036,
+    "Midcap": 5.3861,
+    "Small Cap ": 0.0,
+    "Others/Cash": 4.2103,
+    "Sharpe Ratio": 0.81,
+    "Beta": 0.91,
+    "P/E": 26.47,
+    "P/B": 4.07
+  },
+  "SBI Large & Midcap Fund-Reg(G)": {
+    "Largecap": 43.3817,
+    "Midcap": 36.0591,
+    "Small Cap ": 14.9174,
+    "Others/Cash": 5.6418,
+    "Sharpe Ratio": 1.06,
+    "Beta": 0.82,
+    "P/E": 25.9,
+    "P/B": 3.5
+  },
+  "ICICI Pru Large & Mid Cap Fund(G)": {
+    "Largecap": 44.2567,
+    "Midcap": 35.6136,
+    "Small Cap ": 11.7589,
+    "Others/Cash": 8.370800000000001,
+    "Sharpe Ratio": 1.19,
+    "Beta": 0.86,
+    "P/E": 27.74,
+    "P/B": 3.67
+  },
+  "Canara Rob Emerg Equities Fund-Reg(G)": {
+    "Largecap": 45.330799999999996,
+    "Midcap": 39.2334,
+    "Small Cap ": 12.5245,
+    "Others/Cash": 2.9112999999999998,
+    "Sharpe Ratio": 0.78,
+    "Beta": 0.98,
+    "P/E": 37.5,
+    "P/B": 5.94
+  },
+  "AAA Budding Beast": {
+    "Largecap": 7.000000000000001,
+    "Midcap": 22.0,
+    "Small Cap ": 67.0,
+    "Others/Cash": 3.99999999999999,
+    "Sharpe Ratio": 1.36,
+    "Beta": 0.86,
+    "P/E": 44.4,
+    "P/B": 7.3
+  },
+  "AAA IOP PMS / AIF": {
+    "Largecap": 50.0,
+    "Midcap": 25.0,
+    "Small Cap ": 21.0,
+    "Others/Cash": 4.0,
+    "Sharpe Ratio": 0.69,
+    "Beta": 0.88,
+    "P/E": 33.1,
+    "P/B": 8.0
+  },
+  "Nippon India Multi Cap Fund(G)": {
+    "Largecap": 44.7219,
+    "Midcap": 26.6036,
+    "Small Cap ": 26.8235,
+    "Others/Cash": 1.851,
+    "Sharpe Ratio": 1.29,
+    "Beta": 0.84,
+    "P/E": 29.82,
+    "P/B": 4.18
+  },
+  "SBI Contra Fund-Reg(G)": {
+    "Largecap": 51.09439999999999,
+    "Midcap": 15.018999999999998,
+    "Small Cap ": 11.5491,
+    "Others/Cash": 22.3374,
+    "Sharpe Ratio": 1.17,
+    "Beta": 0.87,
+    "P/E": 20.07,
+    "P/B": 2.57
+  },
+  "Abakkus All Cap PMS": {
+    "Largecap": 45.9,
+    "Midcap": 33.6,
+    "Small Cap ": 12.8,
+    "Others/Cash": 7.70000000000001,
+    "Sharpe Ratio": 1.5,
+    "Beta": 0.9,
+    "P/E": null,
+    "P/B": null
+  },
+  "Renaissance India Next Portfolio": {
+    "Largecap": 54.0,
+    "Midcap": 23.0,
+    "Small Cap ": 23.0,
+    "Others/Cash": 0.0,
+    "Sharpe Ratio": 0.71,
+    "Beta": 1.02,
+    "P/E": 22.5,
+    "P/B": null
+  },
+  "Parag Parikh Flexi Cap Fund-Reg(G)": {
+    "Largecap": 62.009499999999996,
+    "Midcap": 2.0425,
+    "Small Cap ": 2.4410000000000003,
+    "Others/Cash": 33.5069,
+    "Sharpe Ratio": 1.58,
+    "Beta": 0.57,
+    "P/E": 18.63,
+    "P/B": 3.41
+  },
+  "UTI Flexi Cap Fund-Reg(G)": {
+    "Largecap": 60.8892,
+    "Midcap": 24.5183,
+    "Small Cap ": 10.6638,
+    "Others/Cash": 3.9286000000000003,
+    "Sharpe Ratio": 0.4,
+    "Beta": 0.82,
+    "P/E": 41.33,
+    "P/B": 6.01
+  },
+  "ASK IEP PMS / AIF": {
+    "Largecap": 70.14,
+    "Midcap": 15.370000000000001,
+    "Small Cap ": 13.29,
+    "Others/Cash": 1.2,
+    "Sharpe Ratio": null,
+    "Beta": 0.73,
+    "P/E": null,
+    "P/B": null
+  },
+  "Abakkus Emerging Oppurtunities PMS": {
+    "Largecap": 28.000000000000004,
+    "Midcap": 61.5,
+    "Small Cap ": 6.1,
+    "Others/Cash": 4.3999999999999995,
+    "Sharpe Ratio": 1.5,
+    "Beta": 1.0,
+    "P/E": null,
+    "P/B": null
+  },
+  "Bouyant Oppurtunites PMS": {
+    "Largecap": 42.199999999999996,
+    "Midcap": 22.6,
+    "Small Cap ": 20.07,
+    "Others/Cash": 15.129999999999999,
+    "Sharpe Ratio": 1.4,
+    "Beta": 0.9,
+    "P/E": null,
+    "P/B": null
+  },
+  "ICICI Pru Balanced Advantage Fund(G)": {
+    "Largecap": 58.3489,
+    "Midcap": 6.7649,
+    "Small Cap ": 1.1635,
+    "Others/Cash": 33.7227,
+    "Sharpe Ratio": 1.38,
+    "Beta": 0.54,
+    "P/E": 27.06,
+    "P/B": 4.27
+  },
+  "Tata Balanced Adv Fund-Reg(G)": {
+    "Largecap": 51.7648,
+    "Midcap": 9.289200000000001,
+    "Small Cap ": 5.0912,
+    "Others/Cash": 33.8549,
+    "Sharpe Ratio": 0.99,
+    "Beta": 0.67,
+    "P/E": 25.34,
+    "P/B": 3.6
+  },
+  "Kotak Balanced Advantage Fund-Reg(G)": {
+    "Largecap": 51.4694,
+    "Midcap": 9.6827,
+    "Small Cap ": 6.1348,
+    "Others/Cash": 32.7131,
+    "Sharpe Ratio": 1.05,
+    "Beta": 0.7,
+    "P/E": 25.06,
+    "P/B": 4.0
+  },
+  "Edelweiss Balanced Advantage Fund-Reg(G)": {
+    "Largecap": 60.902699999999996,
+    "Midcap": 15.098700000000001,
+    "Small Cap ": 4.1655,
+    "Others/Cash": 19.8332,
+    "Sharpe Ratio": 0.99,
+    "Beta": 0.81,
+    "P/E": 23.42,
+    "P/B": 3.81
+  }
+}
