@@ -21,5 +21,4 @@ export type FundSourceData = {
   data: Record<string, any> // dynamic data from source_data sheet
 }
 
-
-
+export type SourceData = Record<string, any>

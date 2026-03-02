@@ -31,7 +31,6 @@ export default function PerformanceTable({ items, selected }: Props) {
   const visible = items
     .filter(i => (nameToAllocation[i.name] ?? 0) > 0)
     .map(i => {
-      const weight = (nameToAllocation[i.name] ?? 0) / 100
       const weighted: FundPerformance = {
         name: i.name,
         returns: {

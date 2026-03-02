@@ -107,7 +107,7 @@ export default function PositionConcentration({ selected }: Props) {
   return (
     <div className="space-y-4">
       <h2 className="text-lg font-semibold text-slate-700">Position Concentration</h2>
-      
+
       <div className="rounded-xl border border-slate-200 bg-white overflow-hidden">
         <div className="px-4 py-3 border-b border-slate-200 bg-slate-50">
           <h3 className="text-sm font-semibold text-slate-700">Portfolio Concentration by Holdings</h3>
@@ -125,7 +125,7 @@ export default function PositionConcentration({ selected }: Props) {
                 <tr key={label}>
                   <td className="px-4 py-2 text-slate-800 font-medium">{label}</td>
                   <td className="px-3 py-2 text-right text-slate-800">
-                    {value.toFixed(2)}%
+                    {(value || 0).toFixed(2)}%
                   </td>
                 </tr>
               ))}

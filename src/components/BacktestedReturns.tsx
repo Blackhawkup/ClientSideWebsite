@@ -77,7 +77,7 @@ export default function BacktestedReturns({ yearly, selected }: Props) {
       equityFunds.forEach(fund => {
         const allocation = allocationMap[fund.name] ?? 0
         const yearReturn = fund.years[index]
-        
+
         if (yearReturn !== null && yearReturn !== undefined && allocation > 0) {
           weightedSum += yearReturn * allocation
           totalAllocation += allocation
@@ -116,7 +116,7 @@ export default function BacktestedReturns({ yearly, selected }: Props) {
   return (
     <div className="space-y-4">
       <h2 className="text-lg font-semibold text-slate-700">Backtested Returns</h2>
-      
+
       {/* Combined Table */}
       <div className="rounded-xl border border-slate-200 bg-white overflow-hidden">
         <div className="px-4 py-3 border-b border-slate-200 bg-slate-50">
@@ -148,7 +148,7 @@ export default function BacktestedReturns({ yearly, selected }: Props) {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {years.map((year, yearIndex) => {
+              {years.map((year) => {
                 const portfolioReturn = equityPortfolioReturns[year]
                 const yearMap: Record<string, string> = {
                   'CY 2025': 'CY 2025',
@@ -162,7 +162,7 @@ export default function BacktestedReturns({ yearly, selected }: Props) {
                 const dataKey = yearMap[year]
                 const benchmarkValue = selectedReturnData[dataKey]
                 const benchmarkReturn = benchmarkValue ? benchmarkValue * 100 : null
-                
+
                 // Determine color based on performance comparison
                 const getPortfolioColor = () => {
                   if (portfolioReturn === null || portfolioReturn === undefined || benchmarkReturn === null) {
@@ -170,7 +170,7 @@ export default function BacktestedReturns({ yearly, selected }: Props) {
                   }
                   return portfolioReturn > benchmarkReturn ? 'text-green-600' : 'text-red-600'
                 }
-                
+
                 return (
                   <tr key={year}>
                     <td className="px-4 py-2 text-slate-800 font-medium">{year}</td>

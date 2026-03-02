@@ -59,7 +59,7 @@ export default function EquityStockExposure({ selected }: Props) {
     return selected.filter(fund => {
       const fundType = fundTypeMap[fund.name]
       const allocation = allocationMap[fund.name] ?? 0
-      
+
       if (viewType === 'equity') {
         return fundType.toLowerCase().includes('equity') && allocation > 0
       } else {
@@ -82,7 +82,7 @@ export default function EquityStockExposure({ selected }: Props) {
 
     filteredFunds.forEach(fund => {
       const allocation = allocationMap[fund.name] ?? 0
-      const fundHoldings = viewType === 'equity' 
+      const fundHoldings = viewType === 'equity'
         ? sheet2Data.fund_holdings[fund.name] || {}
         : sheet2Data.hybrid_fund_holdings[fund.name] || {}
 
@@ -126,7 +126,7 @@ export default function EquityStockExposure({ selected }: Props) {
           </select>
         )}
       </div>
-      
+
       <div className="rounded-xl border border-slate-200 bg-white overflow-hidden">
         <div className="px-4 py-3 border-b border-slate-200 bg-slate-50">
           <h3 className="text-sm font-semibold text-slate-700">Top 20 Holdings by Portfolio Weight</h3>
@@ -140,7 +140,7 @@ export default function EquityStockExposure({ selected }: Props) {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {companyExposures.map(({ company, weight }, index) => (
+              {companyExposures.map(({ company, weight }) => (
                 <tr key={company}>
                   <td className="px-4 py-2 text-slate-800 font-medium">{company}</td>
                   <td className="px-3 py-2 text-right text-slate-800">

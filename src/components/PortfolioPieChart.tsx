@@ -90,7 +90,7 @@ export default function PortfolioPieChart({ sourceData, selected }: Props) {
   return (
     <div className="space-y-4">
       <h2 className="text-lg font-semibold text-slate-700">Portfolio Allocation by Market Cap</h2>
-      
+
       <div className="rounded-xl border border-slate-200 bg-white p-4">
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
@@ -100,7 +100,7 @@ export default function PortfolioPieChart({ sourceData, selected }: Props) {
                 cx="50%"
                 cy="50%"
                 labelLine={false}
-                label={({ name, value, percent }) => `${name}: ${value.toFixed(1)}%`}
+                label={({ name, value }) => `${name}: ${(value || 0).toFixed(1)}%`}
                 outerRadius={80}
                 fill="#8884d8"
                 dataKey="value"
@@ -109,19 +109,19 @@ export default function PortfolioPieChart({ sourceData, selected }: Props) {
                   <Cell key={`cell-${index}`} fill={entry.fill} />
                 ))}
               </Pie>
-              <Tooltip 
+              <Tooltip
                 formatter={(value: number) => [`${value.toFixed(2)}%`, 'Allocation']}
                 labelFormatter={(label) => `Market Cap: ${label}`}
               />
-              <Legend 
-                verticalAlign="bottom" 
+              <Legend
+                verticalAlign="bottom"
                 height={36}
                 formatter={(value) => <span className="text-sm">{value}</span>}
               />
             </PieChart>
           </ResponsiveContainer>
         </div>
-        
+
         {/* Summary Stats */}
         <div className="mt-4 pt-4 border-t border-slate-200">
           <div className="grid grid-cols-2 gap-4 text-sm">
