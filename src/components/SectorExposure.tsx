@@ -1,5 +1,7 @@
 import { useMemo, useState, useEffect } from 'react'
 import type { SelectedFund } from '../types'
+import { fetchData } from '../utils/dataFetcher';
+
 
 type Props = {
   selected: SelectedFund[]
@@ -23,7 +25,7 @@ export default function SectorExposure({ selected }: Props) {
   useEffect(() => {
     const loadSheet2Data = async () => {
       try {
-        const response = await fetch('/data/sheet2_data.json')
+        const response = await fetchData('/data/sheet2_data.json')
         if (response.ok) {
           const data = await response.json()
           setSheet2Data(data)

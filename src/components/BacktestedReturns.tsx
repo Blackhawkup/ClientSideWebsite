@@ -1,5 +1,7 @@
 import { useMemo, useState, useEffect } from 'react'
 import type { FundYearlyPerformance, SelectedFund } from '../types'
+import { fetchData } from '../utils/dataFetcher';
+
 
 type Props = {
   yearly: FundYearlyPerformance[]
@@ -21,7 +23,7 @@ export default function BacktestedReturns({ yearly, selected }: Props) {
   useEffect(() => {
     const loadSheet5Data = async () => {
       try {
-        const response = await fetch('/data/sheet5_data.json')
+        const response = await fetchData('/data/sheet5_data.json')
         if (response.ok) {
           const data = await response.json()
           setSheet5Data(data)

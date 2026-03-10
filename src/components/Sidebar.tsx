@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { fetchData } from '../utils/dataFetcher';
+
 
 type SelectedFund = {
   name: string
@@ -32,9 +34,9 @@ export default function Sidebar({ isOpen, onClose, onSelectionChange, onInvestme
   useEffect(() => {
     setLoading(true)
     setError(null)
-    fetch('/data/selector.json')
-      .then(response => response.json())
-      .then((data) => {
+    fetchData('/data/selector.json')
+      .then((response: any) => response.json())
+      .then((data: any) => {
         // Convert JSON structure to FundItem array
         const funds: FundItem[] = []
         Object.entries(data).forEach(([category, subcategories]) => {
@@ -53,7 +55,7 @@ export default function Sidebar({ isOpen, onClose, onSelectionChange, onInvestme
         })
         setAllFunds(funds)
       })
-      .catch((e) => setError(e?.message || 'Failed to load data'))
+      .catch((e: any) => setError(e?.message || 'Failed to load data'))
       .finally(() => setLoading(false))
   }, [])
 
