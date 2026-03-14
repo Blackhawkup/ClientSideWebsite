@@ -2,8 +2,9 @@ import { useMemo, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import PerformanceTable from "./components/PerformanceTable";
 import YearlyReturnsTable from "./components/YearlyReturnsTable";
-import TopThreeLineChart from "./components/TopThreeLineChart.tsx";
-import TopThreeYearlyLineChart from "./components/TopThreeYearlyLineChart";
+
+import BacktestedReturnsChart from "./components/BacktestedReturnsChart";
+import MonthlyReturnsBarChart from "./components/MonthlyReturnsBarChart";
 import SourceDataTable from "./components/SourceDataTable";
 import BacktestedReturns from "./components/BacktestedReturns";
 import MonthlyReturns from "./components/MonthlyReturns";
@@ -14,7 +15,7 @@ import SectorExposure from "./components/SectorExposure";
 import SectorConcentration from "./components/SectorConcentration";
 import PortfolioPieChart from "./components/PortfolioPieChart";
 import PortfolioVsBenchmarkChart from "./components/PortfolioVsBenchmarkChart";
-import RiskReturnScatter from "./components/RiskReturnScatter";
+import RollingReturns from "./components/RollingReturns";
 import InvestmentSummary from "./components/InvestmentSummary";
 import type { FundPerformance, FundYearlyPerformance, FundSourceData, SelectedFund } from "./types";
 import { useMultiClick } from "./hooks/useMultiClick";
@@ -198,16 +199,21 @@ export default function App() {
         <InvestmentSummary selected={selectedFunds} totalInvestment={totalInvestment} />
 
         <PerformanceTable items={performance} selected={selectedFunds} />
-        <TopThreeLineChart items={performance} selected={selectedFunds} />
-        <YearlyReturnsTable items={yearly} selected={selectedFunds} />
-        <TopThreeYearlyLineChart yearly={yearly} selected={selectedFunds} />
-        <SourceDataTable items={sourceData} selected={selectedFunds} />
 
-        {/* Side-by-side tables */}
+        {/* Backtested Returns: Chart + Table side by side */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <BacktestedReturnsChart yearly={yearly} selected={selectedFunds} />
           <BacktestedReturns yearly={yearly} selected={selectedFunds} />
+        </div>
+
+        {/* Monthly Returns: Chart + Table side by side */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <MonthlyReturnsBarChart performance={performance} selected={selectedFunds} />
           <MonthlyReturns performance={performance} selected={selectedFunds} />
         </div>
+
+        <YearlyReturnsTable items={yearly} selected={selectedFunds} />
+        <SourceDataTable items={sourceData} selected={selectedFunds} />
 
         {/* Portfolio Analysis Tables */}
         <div className="space-y-6">
@@ -232,7 +238,7 @@ export default function App() {
           {/* Performance Analysis Charts */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <PortfolioVsBenchmarkChart yearly={yearly} selected={selectedFunds} />
-            <RiskReturnScatter sourceData={sourceData} selected={selectedFunds} />
+            <RollingReturns />
           </div>
         </div>
       </main>

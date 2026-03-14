@@ -22,3 +22,9 @@ export type FundSourceData = {
 }
 
 export type SourceData = Record<string, any>
+
+export type BenchmarkData = {
+  name: string
+  yearly_returns: Record<string, number>
+  monthly_returns: Record<string, number>
+}

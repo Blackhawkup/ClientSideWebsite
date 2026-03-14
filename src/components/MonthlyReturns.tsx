@@ -121,8 +121,7 @@ export default function MonthlyReturns({ performance, selected }: Props) {
   ]
 
   return (
-    <div className="space-y-4">
-      <h2 className="text-lg font-semibold text-slate-700">Monthly Returns</h2>
+    <div>
       
       {/* Combined Table */}
       <div className="rounded-xl border border-slate-200 bg-white overflow-hidden">

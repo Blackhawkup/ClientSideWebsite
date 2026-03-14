@@ -116,8 +116,7 @@ export default function BacktestedReturns({ yearly, selected }: Props) {
   const years = ['CY 2025', '2024', '2023', '2022', '2021', '2020', '2019']
 
   return (
-    <div className="space-y-4">
-      <h2 className="text-lg font-semibold text-slate-700">Backtested Returns</h2>
+    <div>
 
       {/* Combined Table */}
       <div className="rounded-xl border border-slate-200 bg-white overflow-hidden">
